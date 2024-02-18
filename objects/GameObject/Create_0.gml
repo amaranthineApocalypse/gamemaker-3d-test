@@ -4,6 +4,8 @@
 sprite_z = sprite_height;
 sprite_x = sprite_width / 2;
 
+z = 0;
+
 vertex_format_begin();
 vertex_format_add_position_3d();
 vertex_format_add_normal();
@@ -16,6 +18,12 @@ vbuffer = vertex_create_buffer();
 current_frame = -1;
 current_sprite = sprite_index;
 image_angle = image_angle - floor(image_angle / 360) * 360
+
 z_rotation = image_angle;
 x_offset = 0;
 y_offset = 0;
+
+if (has_collision) {
+	mesh = new colmesh_cube(x, y, z, sprite_x, sprite_x, sprite_height)
+	LevelController.level_colmesh.addShape(mesh);
+}

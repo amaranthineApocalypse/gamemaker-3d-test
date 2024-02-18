@@ -4,7 +4,7 @@
 
 
 var x1 = -sprite_x;
-var z1 = -sprite_z;
+var z1 = 0 - sprite_z;
 var x2 = sprite_x;
 var z2 = 0;
 // Check whether the instance's sprite has changed
@@ -26,7 +26,9 @@ if (current_frame != floor(image_index) || current_sprite != sprite_index){
 }
 
 
-var matrix = matrix_build(x + x_offset * sprite_x , y + y_offset * sprite_x, 0, 0, 0, z_rotation, 1, 1, 1);
+var matrix = matrix_build(x + x_offset * sprite_x , y + y_offset * sprite_x, z,
+	0, 0, z_rotation,
+	1, 1, 1);
 
 matrix_set(matrix_world, matrix);
 

@@ -5,6 +5,7 @@
 var opposite = (x - Player.x);
 var adjacent = (y - Player.y);
 var hypotenuse = sqrt(sqr(adjacent) + sqr(opposite));
+hypotenuse = hypotenuse == 0 ? 1 : hypotenuse;
 
 z_rotation = adjacent < 0 ? 180 - darcsin(opposite / hypotenuse) : darcsin(opposite / hypotenuse);
 

@@ -37,6 +37,28 @@ if (keyboard_check(ord("D"))){
 	y += move(0, 1, dcos(look_dir) * MOVESPEED);
 }
 
+//Make sure the collider has the same coordinates as the player
+collider.x = x;
+collider.y = y;
+collider.z = z;
+
+//Make the collider avoid the colmesh
+collider.avoid(LevelController.level_colmesh);
+
+//Copy the coordinates of the collider back to the player
+x = collider.x;
+y = collider.y;
+z = collider.z;
+
+
+if (mouse_check_button(1)) {
+	instance_create_depth(x, y, z,
+CollisionBeam, {pitch: look_pitch, yaw: look_dir,
+	start_x: x - (dcos(look_dir) * 10) ,
+	start_y: y + (dsin(look_dir) * 10) ,
+	start_z: z - look_pitch })
+}
+
 //if (place_meeting(x, y, GameObject)){
 //	show_debug_message("Colliding")
 
