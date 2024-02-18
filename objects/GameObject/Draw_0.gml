@@ -10,6 +10,7 @@ var z2 = 0;
 
 if (current_frame != floor(image_index) || current_sprite != sprite_index){
 	current_frame = floor(image_index);
+	vertex_delete_buffer(vbuffer);
 	vbuffer = vertex_create_buffer();
 	vertex_begin(vbuffer, vertex_format);
 	var uvs = sprite_get_uvs(sprite_index, image_index);
