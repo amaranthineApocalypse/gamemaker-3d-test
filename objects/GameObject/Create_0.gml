@@ -15,3 +15,7 @@ vbuffer = vertex_create_buffer();
 
 current_frame = -1;
 current_sprite = sprite_index;
+image_angle = image_angle - floor(image_angle / 360) * 360
+z_rotation = image_angle;
+x_offset = 0;
+y_offset = 0;

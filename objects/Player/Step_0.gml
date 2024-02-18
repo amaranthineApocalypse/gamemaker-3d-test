@@ -18,21 +18,27 @@ if keyboard_check(vk_shift){
 }
 
 if (keyboard_check(ord("W"))){
-	x += dcos(look_dir) * MOVESPEED;
-	y -= dsin(look_dir) * MOVESPEED;
+	x += move(1, 0, dcos(look_dir) * MOVESPEED);
+	y -= move(0, -1, dsin(look_dir) * MOVESPEED);
 }
 
 if (keyboard_check(ord("A"))){
-	x -= dsin(look_dir) * MOVESPEED;
-	y -= dcos(look_dir) * MOVESPEED;
+	x -= move(-1, 0, dsin(look_dir) * MOVESPEED);
+	y -= move(0, -1, dcos(look_dir) * MOVESPEED);
 }
 
 if (keyboard_check(ord("S"))){
-	x -= dcos(look_dir) * MOVESPEED;
-	y += dsin(look_dir) * MOVESPEED;
+	x -= move(-1, 0, dcos(look_dir) * MOVESPEED);
+	y += move(0, 1, dsin(look_dir) * MOVESPEED);
 }
 
 if (keyboard_check(ord("D"))){
-	x += dsin(look_dir) * MOVESPEED;
+	x += move(1, 0, dsin(look_dir) * MOVESPEED);
 	y += dcos(look_dir) * MOVESPEED;
 }
+
+//show_debug_message(x)
+//if (place_meeting(x, y, GameObject)){
+//	show_debug_message("Colliding")
+
+//}

@@ -1,11 +1,9 @@
 {
   "resourceType": "GMObject",
   "resourceVersion": "1.0",
-  "name": "Player",
+  "name": "TestObjectSk",
   "eventList": [
-    {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,},
     {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","collisionObjectId":null,"eventNum":0,"eventType":3,"isDnD":false,},
-    {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","collisionObjectId":{"name":"GameObject","path":"objects/GameObject/GameObject.yy",},"eventNum":0,"eventType":4,"isDnD":false,},
   ],
   "managed": true,
   "overriddenProperties": [],
@@ -13,7 +11,10 @@
     "name": "Objects",
     "path": "folders/Objects.yy",
   },
-  "parentObjectId": null,
+  "parentObjectId": {
+    "name": "TestObject",
+    "path": "objects/TestObject/TestObject.yy",
+  },
   "persistent": false,
   "physicsAngularDamping": 0.1,
   "physicsDensity": 0.5,
@@ -28,11 +29,11 @@
   "physicsShapePoints": [],
   "physicsStartAwake": true,
   "properties": [],
-  "solid": true,
+  "solid": false,
   "spriteId": {
-    "name": "Sprite5",
-    "path": "sprites/Sprite5/Sprite5.yy",
+    "name": "SkeleBoy_Spr",
+    "path": "sprites/SkeleBoy_Spr/SkeleBoy_Spr.yy",
   },
   "spriteMaskId": null,
-  "visible": false,
+  "visible": true,
 }
