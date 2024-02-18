@@ -1,4 +1,2 @@
-/// @description Insert description here
-// You can write your code in this editor
-
-z--;
+/// @description Raise self on the  axis
+z -= 5;

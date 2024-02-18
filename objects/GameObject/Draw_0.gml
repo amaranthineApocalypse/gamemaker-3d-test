@@ -1,7 +1,5 @@
 /// @description Insert description here
-// You can write your code in this editor
-
-
+// The Draw
 
 var x1 = -sprite_x;
 var z1 = 0 - sprite_z;
@@ -25,16 +23,13 @@ if (current_frame != floor(image_index) || current_sprite != sprite_index){
 	vertex_end(vbuffer);
 }
 
-
-var matrix = matrix_build(x + x_offset * sprite_x , y + y_offset * sprite_x, z,
+// Builds the matrix - the offset allows for objects su
+var matrix = matrix_build(
+	x, y, z,
 	0, 0, z_rotation,
 	1, 1, 1);
 
 matrix_set(matrix_world, matrix);
-
-
 vertex_submit(vbuffer, pr_trianglelist, sprite_get_texture(sprite_index, image_index));
-
-
 matrix_set(matrix_world, matrix_build_identity());
 

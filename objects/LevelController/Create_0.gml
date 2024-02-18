@@ -1,7 +1,9 @@
 /// @description Insert description here
-// You can write your code in this editor
+// Container for the collision mesh.
 
-
+// Initialise colMesh
+// Instances should add their own shapes to the mesh
 level_colmesh = new colmesh();
-var regionSize = 200; //120 is a magic number I chose that fit well for my player size and level complexity. It may have to be different for your game!
+// I believe a larger number here means better performance.
+var regionSize = 200;
 level_colmesh.subdivide(regionSize);

@@ -1,7 +1,7 @@
 {
   "resourceType": "GMScript",
   "resourceVersion": "1.0",
-  "name": "load_obj",
+  "name": "check_collision",
   "isCompatibility": false,
   "isDnD": false,
   "parent": {
