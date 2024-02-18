@@ -3,6 +3,7 @@
 
 gpu_set_ztestenable(true);
 gpu_set_zwriteenable(true);
+gpu_set_alphatestenable(true);
 
 vertex_format_begin();
 vertex_format_add_position_3d();

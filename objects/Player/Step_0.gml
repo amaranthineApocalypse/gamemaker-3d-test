@@ -1,7 +1,7 @@
 /// @description Insert description here
 // You can write your code in this editor
 
-MOVESPEED = 3;
+var MOVESPEED = 3;
 
 look_dir -= ((window_mouse_get_x() - window_get_width() / 2) + 0.5) / 10;
 look_pitch -= ((window_mouse_get_y() - window_get_height() / 2) + 0.5) / 10;
