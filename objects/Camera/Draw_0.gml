@@ -40,5 +40,3 @@ camera_set_proj_mat(
 
 camera_apply(camera);
 #endregion
-
-vertex_submit(vbuffer, pr_trianglelist, -1);

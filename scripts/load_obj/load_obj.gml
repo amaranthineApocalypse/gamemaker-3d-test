@@ -10,7 +10,7 @@ function load_obj(filepath){
 	
 	// Create the vertex buffer
 	var model = vertex_create_buffer();
-	vertex_begin(model, Camera.vertex_format)
+	vertex_begin(model, GameObject.vertex_format)
 	
 	// Create the lists of position/normal/texture data
 	var vertex_x = ds_list_create();
@@ -58,7 +58,7 @@ function load_obj(filepath){
 				break;
 			
 			case "f":
-				for (var i = 0; i < 3; i++){
+				for (var i = 1; i <= 3; i++){
 					var face_indices = string_split(terms[i], "/");
 					
 					// Look up the x, y, z, normal x, y, z and texture x, y in the already-created lists
@@ -71,7 +71,17 @@ function load_obj(filepath){
 					var ny = ds_list_find_value(vertex_ny, real(face_indices[2]) - 1);
 					var nz = ds_list_find_value(vertex_nz, real(face_indices[2]) - 1);
 					
-					vertex_add_point(model, xx, yy, zz, nx, ny, nz, u, v, c_white, 1);
+					// Swap the y and z positions to correct orientation
+					var t = yy;
+					yy = zz;
+					zz = t;
+					// Also for the normals
+					var t = ny;
+					ny = nz;
+					nz = t;
+					
+					//Add the vertex to the vertex buffer
+					vertex_add_point(model, xx, yy, -zz, nx, ny, -nz, u, v, c_white, 1);
 				}
 				break;
 			

@@ -27,7 +27,10 @@
     {"resourceType":"GMFolder","resourceVersion":"1.0","name":"Tile Sets","folderPath":"folders/Tile Sets.yy",},
     {"resourceType":"GMFolder","resourceVersion":"1.0","name":"Timelines","folderPath":"folders/Timelines.yy",},
   ],
-  "IncludedFiles": [],
+  "IncludedFiles": [
+    {"resourceType":"GMIncludedFile","resourceVersion":"1.0","name":"merry.obj","CopyToMask":-1,"filePath":"datafiles",},
+    {"resourceType":"GMIncludedFile","resourceVersion":"1.0","name":"plant.obj","CopyToMask":-1,"filePath":"datafiles",},
+  ],
   "isEcma": false,
   "LibraryEmitters": [],
   "MetaData": {
@@ -42,6 +45,7 @@
     {"id":{"name":"Player","path":"objects/Player/Player.yy",},},
     {"id":{"name":"SkeleBoy_Spr","path":"sprites/SkeleBoy_Spr/SkeleBoy_Spr.yy",},},
     {"id":{"name":"Camera","path":"objects/Camera/Camera.yy",},},
+    {"id":{"name":"ModelLoadTestPlant","path":"objects/ModelLoadTestPlant/ModelLoadTestPlant.yy",},},
     {"id":{"name":"GameObject","path":"objects/GameObject/GameObject.yy",},},
     {"id":{"name":"Room1","path":"rooms/Room1/Room1.yy",},},
   ],

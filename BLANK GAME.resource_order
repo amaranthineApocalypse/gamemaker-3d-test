@@ -21,6 +21,7 @@
     {"name":"load_obj","order":1,"path":"scripts/load_obj/load_obj.yy",},
     {"name":"Player","order":1,"path":"objects/Player/Player.yy",},
     {"name":"SkeleBoy_Spr","order":1,"path":"sprites/SkeleBoy_Spr/SkeleBoy_Spr.yy",},
+    {"name":"ModelLoadTestPlant","order":4,"path":"objects/ModelLoadTestPlant/ModelLoadTestPlant.yy",},
     {"name":"GameObject","order":2,"path":"objects/GameObject/GameObject.yy",},
   ],
 }
