@@ -18,23 +18,23 @@ if keyboard_check(vk_shift){
 }
 
 if (keyboard_check(ord("W"))){
-	x += move(1, 0, dcos(look_dir) * MOVESPEED);
-	y -= move(0, -1, dsin(look_dir) * MOVESPEED);
+	x += dcos(look_dir) * move(1, 0,  MOVESPEED);
+	y -= dsin(look_dir) * move(0, -1,  MOVESPEED);
 }
 
 if (keyboard_check(ord("A"))){
-	x -= move(-1, 0, dsin(look_dir) * MOVESPEED);
-	y -= move(0, -1, dcos(look_dir) * MOVESPEED);
+	x -= dsin(look_dir) * move(-1, 0, MOVESPEED);
+	y -= dcos(look_dir) * move(0, -1, MOVESPEED);
 }
 
 if (keyboard_check(ord("S"))){
-	x -= move(-1, 0, dcos(look_dir) * MOVESPEED);
-	y += move(0, 1, dsin(look_dir) * MOVESPEED);
+	x -= dcos(look_dir) * move(-1, 0, MOVESPEED);
+	y += dsin(look_dir) * move(0, 1, MOVESPEED);
 }
 
 if (keyboard_check(ord("D"))){
-	x += move(1, 0, dsin(look_dir) * MOVESPEED);
-	y += dcos(look_dir) * MOVESPEED;
+	x += dsin(look_dir) * move(1, 0, MOVESPEED);
+	y += dcos(look_dir) * move(0, 1, MOVESPEED);
 }
 
 //show_debug_message(x)
