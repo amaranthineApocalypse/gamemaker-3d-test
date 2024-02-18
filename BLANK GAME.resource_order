@@ -30,7 +30,7 @@
     {"name":"colmesh_colliders","order":2,"path":"scripts/colmesh_colliders/colmesh_colliders.yy",},
     {"name":"check_collision","order":2,"path":"scripts/check_collision/check_collision.yy",},
     {"name":"TestObject","order":3,"path":"objects/TestObject/TestObject.yy",},
-    {"name":"load_obj","order":1,"path":"scripts/load_obj/load_obj.yy",},
+    {"name":"load_object","order":3,"path":"scripts/load_object/load_object.yy",},
     {"name":"colmesh_math","order":4,"path":"scripts/colmesh_math/colmesh_math.yy",},
     {"name":"PlayerPlaceholder_spr","order":5,"path":"sprites/PlayerPlaceholder_spr/PlayerPlaceholder_spr.yy",},
     {"name":"LevelController","order":10,"path":"objects/LevelController/LevelController.yy",},

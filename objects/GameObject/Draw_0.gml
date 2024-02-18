@@ -23,7 +23,6 @@ if (current_frame != floor(image_index) || current_sprite != sprite_index){
 	vertex_end(vbuffer);
 }
 
-// Builds the matrix - the offset allows for objects su
 var matrix = matrix_build(
 	x, y, z,
 	0, 0, z_rotation,
