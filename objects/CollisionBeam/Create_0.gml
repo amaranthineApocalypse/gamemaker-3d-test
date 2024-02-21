@@ -13,4 +13,4 @@ z = start_z;
 move_speed = 10;
 max_distance = 500;
 
-collider = new colmesh_collider_capsule(x, y, z, 0, 0, 0, 3, 6);
+collider = new colmesh_collider_capsule(x, y, z, 1, 1, 1, 3, 6);

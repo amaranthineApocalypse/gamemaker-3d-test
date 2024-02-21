@@ -12,3 +12,6 @@ collider = new colmesh_collider_capsule(
 	x, y, z,
 	up, up, up,
 	32, 64, 45);
+
+// Fields for use while developing
+drift_adjust = 0.5;

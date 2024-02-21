@@ -25,4 +25,5 @@ z_rotation = 0;
 if (has_collision) {
 	mesh = new colmesh_cube(x, y, -sprite_z / 2, sprite_x, sprite_x, sprite_height)
 	LevelController.level_colmesh.addShape(mesh);
+
 }
