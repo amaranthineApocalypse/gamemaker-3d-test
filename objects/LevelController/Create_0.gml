@@ -14,5 +14,5 @@ var t_depth = layer_get_depth("Tiles_1")
 var tile_map = new colmesh_cube(
 	tilemap_get_x(tiles) + (length / 2),
 	tilemap_get_y(tiles) + (breadth / 2),
-	t_depth, length, breadth, 0);
+	t_depth, length, breadth, 1);
 level_colmesh.addShape(tile_map);
