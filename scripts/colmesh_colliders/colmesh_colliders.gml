@@ -147,10 +147,35 @@ function colmesh_collider_capsule(x, y, z, xup, yup, zup, radius, height, slopeA
 	static checkForCollisionRegion = function(colMesh, region)
 	{
 		//Returns whether or not the given capsule collides with the given region
+		//// CAP CHANGES START HERE
+		cmCol = self;
+		if (cmRecursion == 0)
+		{
+			//Only reset the collider for the first recursive call
+			reset();
+		}
+		
+		if (is_undefined(region) || cmRecursion >= cmMaxRecursion)
+		{
+			//Exit the script if the given region does not exist
+			//Exit the script if we've reached the recursion limit
+			return false;
+		}
+		//p is the center of the sphere for which we're doing collision checking. 
+		//If height is larger than 0, this will be overwritten by the closest point to the shape along the central axis of the capsule
+		var p = [x, y, z];
+		var P = colMesh.priority[cmRecursion];
+		if (P < 0 && precision > 0)
+		{	
+			//We need a separate ds_priority for each recursive level, otherwise they'll mess with each other
+			P = ds_priority_create();
+			colMesh.priority[cmRecursion] = P;
+		}
+		//// CAP CHANGES END HERE
 		var i = ds_list_size(region);
 		repeat (i)
 		{
-			var col = _getShape(region[| --i]).capsuleCollision(x, y, z, xup, yup, zup, radius, height);
+			var col = colMesh._getShape(region[| --i]).capsuleCollision(x, y, z, xup, yup, zup, radius, height);
 			if (col) return true;
 		}
 		return false;

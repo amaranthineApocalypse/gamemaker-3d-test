@@ -6,6 +6,6 @@
   "isDnD": false,
   "parent": {
     "name": "Supplementary scripts",
-    "path": "folders/ColMesh/ColMesh Scripts/Supplementary scripts.yy",
+    "path": "folders/Scripts/ColMesh/ColMesh Scripts/Supplementary scripts.yy",
   },
 }
