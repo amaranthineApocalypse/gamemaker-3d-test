@@ -43,7 +43,9 @@
     {"name":"Beam_spr","order":3,"path":"sprites/Beam_spr/Beam_spr.yy",},
     {"name":"SkeleBoy_Spr","order":1,"path":"sprites/SkeleBoy_Spr/SkeleBoy_Spr.yy",},
     {"name":"Beam_yellow_spr","order":6,"path":"sprites/Beam_yellow_spr/Beam_yellow_spr.yy",},
+    {"name":"Sprite7","order":17,"path":"sprites/Sprite7/Sprite7.yy",},
     {"name":"ModelLoadTestPlant","order":4,"path":"objects/ModelLoadTestPlant/ModelLoadTestPlant.yy",},
     {"name":"GameObject","order":2,"path":"objects/GameObject/GameObject.yy",},
+    {"name":"TestObject9","order":11,"path":"objects/TestObject9/TestObject9.yy",},
   ],
 }
