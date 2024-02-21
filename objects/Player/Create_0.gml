@@ -5,6 +5,9 @@ z = -32;
 look_dir = 0;
 look_pitch = 0;
 
+fall_speed = 0;
+max_fall_speed = 15;
+
 // Haven't figured out what theis value is, but it seems to be best at 0
 up = 0;
 // Create own colmesh - This will collide with the level mesh.

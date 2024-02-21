@@ -1,2 +1,2 @@
 /// @description Raise self on the  axis
-z -= 5;
+//fall_speed = -10;

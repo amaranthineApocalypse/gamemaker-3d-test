@@ -38,10 +38,21 @@ if (keyboard_check(ord("D"))){
 	y += dcos(look_dir) * MOVESPEED;
 }
 
-//Check collision
+var old_z = z;
+fall_speed += fall_speed > max_fall_speed ? 0 : 0.3;
+if keyboard_check_pressed(vk_space) {
+	fall_speed = -8;
+}
+z += fall_speed;
+
+
+//Check collision - if the player is currently in a hitbox, they will be transported out of it
 avoid_mesh(collider, LevelController.level_colmesh)
 
-
+// Reset the fall speed if the player is on the ground
+if (old_z == z) {
+	fall_speed = 0;	
+}
 
 // Create the CollisionBeam
 if (mouse_check_button(1)) {
