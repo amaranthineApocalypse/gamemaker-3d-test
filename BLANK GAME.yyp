@@ -34,6 +34,8 @@
     {"resourceType":"GMFolder","resourceVersion":"1.0","name":"Sprites","folderPath":"folders/Sprites.yy",},
     {"resourceType":"GMFolder","resourceVersion":"1.0","name":"Tile Sets","folderPath":"folders/Tile Sets.yy",},
     {"resourceType":"GMFolder","resourceVersion":"1.0","name":"Timelines","folderPath":"folders/Timelines.yy",},
+    {"resourceType":"GMFolder","resourceVersion":"1.0","name":"Demo","folderPath":"folders/ColMesh/Demo.yy",},
+    {"resourceType":"GMFolder","resourceVersion":"1.0","name":"Shaders","folderPath":"folders/ColMesh/Demo/Shaders.yy",},
   ],
   "IncludedFiles": [
     {"resourceType":"GMIncludedFile","resourceVersion":"1.0","name":"merry.obj","CopyToMask":-1,"filePath":"datafiles",},
@@ -54,6 +56,7 @@
     {"id":{"name":"Sprite1","path":"sprites/Sprite1/Sprite1.yy",},},
     {"id":{"name":"vertex_add_point","path":"scripts/vertex_add_point/vertex_add_point.yy",},},
     {"id":{"name":"colmesh_debug_vbuffers","path":"scripts/colmesh_debug_vbuffers/colmesh_debug_vbuffers.yy",},},
+    {"id":{"name":"sh_colmesh_world","path":"shaders/sh_colmesh_world/sh_colmesh_world.yy",},},
     {"id":{"name":"colmesh_colliders","path":"scripts/colmesh_colliders/colmesh_colliders.yy",},},
     {"id":{"name":"check_collision","path":"scripts/check_collision/check_collision.yy",},},
     {"id":{"name":"TestObject","path":"objects/TestObject/TestObject.yy",},},

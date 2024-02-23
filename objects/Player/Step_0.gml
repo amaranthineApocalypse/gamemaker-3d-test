@@ -47,6 +47,9 @@ z += fall_speed;
 
 
 //Check collision - if the player is currently in a hitbox, they will be transported out of it
+// If the player is travelling fast enough that they do not finish their movement for this frame
+// inside a hitbox, they will go through hitboxes.
+// It is possible to fix this, though might be resource costly.
 avoid_mesh(collider, LevelController.level_colmesh)
 
 // Reset the fall speed if the player is on the ground

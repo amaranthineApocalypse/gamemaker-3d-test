@@ -23,6 +23,8 @@
     {"name":"Sprites","order":1,"path":"folders/Sprites.yy",},
     {"name":"Tile Sets","order":2,"path":"folders/Tile Sets.yy",},
     {"name":"Timelines","order":8,"path":"folders/Timelines.yy",},
+    {"name":"Demo","order":2,"path":"folders/ColMesh/Demo.yy",},
+    {"name":"Shaders","order":1,"path":"folders/ColMesh/Demo/Shaders.yy",},
   ],
   "ResourceOrderSettings": [
     {"name":"Wall_spr","order":2,"path":"sprites/Wall_spr/Wall_spr.yy",},
@@ -31,6 +33,7 @@
     {"name":"colmesh_complex","order":1,"path":"scripts/colmesh_complex/colmesh_complex.yy",},
     {"name":"CollisionBeam","order":8,"path":"objects/CollisionBeam/CollisionBeam.yy",},
     {"name":"colmesh_debug_vbuffers","order":2,"path":"scripts/colmesh_debug_vbuffers/colmesh_debug_vbuffers.yy",},
+    {"name":"sh_colmesh_world","order":1,"path":"shaders/sh_colmesh_world/sh_colmesh_world.yy",},
     {"name":"colmesh_colliders","order":2,"path":"scripts/colmesh_colliders/colmesh_colliders.yy",},
     {"name":"check_collision","order":1,"path":"scripts/check_collision/check_collision.yy",},
     {"name":"TestObject","order":3,"path":"objects/TestObject/TestObject.yy",},

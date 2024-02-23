@@ -32,3 +32,7 @@ matrix_set(matrix_world, matrix);
 vertex_submit(vbuffer, pr_trianglelist, sprite_get_texture(sprite_index, image_index));
 matrix_set(matrix_world, matrix_build_identity());
 
+if has_collision {
+	M = colmesh_matrix_build(x, y, z, 0, current_time / 50, 0, 1, 1, 1);
+	dynamic.setMatrix(M, true);
+}
