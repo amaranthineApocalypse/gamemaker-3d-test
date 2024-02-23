@@ -27,7 +27,6 @@
   "ResourceOrderSettings": [
     {"name":"Wall_spr","order":2,"path":"sprites/Wall_spr/Wall_spr.yy",},
     {"name":"Rotatable","order":5,"path":"objects/Rotatable/Rotatable.yy",},
-    {"name":"SelfDeleting","order":12,"path":"objects/SelfDeleting/SelfDeleting.yy",},
     {"name":"colmesh_global_functions","order":3,"path":"scripts/colmesh_global_functions/colmesh_global_functions.yy",},
     {"name":"colmesh_complex","order":1,"path":"scripts/colmesh_complex/colmesh_complex.yy",},
     {"name":"CollisionBeam","order":8,"path":"objects/CollisionBeam/CollisionBeam.yy",},

@@ -47,7 +47,6 @@
   "resources": [
     {"id":{"name":"Wall_spr","path":"sprites/Wall_spr/Wall_spr.yy",},},
     {"id":{"name":"Rotatable","path":"objects/Rotatable/Rotatable.yy",},},
-    {"id":{"name":"SelfDeleting","path":"objects/SelfDeleting/SelfDeleting.yy",},},
     {"id":{"name":"colmesh_global_functions","path":"scripts/colmesh_global_functions/colmesh_global_functions.yy",},},
     {"id":{"name":"colmesh_complex","path":"scripts/colmesh_complex/colmesh_complex.yy",},},
     {"id":{"name":"colmesh","path":"scripts/colmesh/colmesh.yy",},},

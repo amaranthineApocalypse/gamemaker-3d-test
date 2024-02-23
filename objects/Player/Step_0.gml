@@ -56,8 +56,10 @@ if (old_z == z) {
 
 // Create the CollisionBeam
 if (mouse_check_button(1)) {
-	instance_create_depth(x, y, z,
-	CollisionBeam, {pitch: look_pitch, yaw: look_dir,
+	instance_create_depth(
+	x, y, z,
+	CollisionBeam,
+	{pitch: look_pitch, yaw: look_dir,
 	start_x: x - dsin(look_dir) * MOVESPEED,
 	start_y: y - dcos(look_dir) * MOVESPEED,
 	start_z: z})
