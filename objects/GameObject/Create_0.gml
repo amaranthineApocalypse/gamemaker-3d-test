@@ -23,7 +23,8 @@ z_rotation = 0;
 
 // Preset variable has_collision determines if the object should have collision
 if (has_collision) {
-	mesh = new colmesh_cube(x, y, -sprite_z / 2, sprite_x, sprite_x, sprite_height)
-	LevelController.level_colmesh.addShape(mesh);
+	mesh = new colmesh_cube(0, 0, 0, sprite_x, sprite_x, sprite_height)
+	var M = colmesh_matrix_build(x, y, -sprite_z / 2, 0, 0, 0, 1, 1, 1);
+	dynamic =LevelController.level_colmesh.addDynamic(mesh, M);
 
 }
